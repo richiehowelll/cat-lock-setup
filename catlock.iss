@@ -9,7 +9,7 @@ DefaultGroupName=CatLock
 PrivilegesRequired=lowest
 
 [Files]
-Source: "C:\Users\richi\PycharmProjects\CatLock\dist\CatLock.exe"; DestDir: "{userpf}\.catlock"; Flags: ignoreversion
+Source: "{CATLOCK_EXECUTABLE}"; DestDir: "{userpf}\.catlock"; Flags: ignoreversion
 
 [Icons]
 Name: "{autoprograms}\CatLock"; Filename: "{userpf}\.catlock\catlock.exe"
