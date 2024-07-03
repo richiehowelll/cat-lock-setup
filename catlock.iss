@@ -9,7 +9,7 @@ DefaultGroupName=CatLock
 PrivilegesRequired=lowest
 
 [Files]
-Source: "{CATLOCK_EXECUTABLE}"; DestDir: "{userpf}\.catlock"; Flags: ignoreversion
+Source: "C:\Users\richi\PycharmProjects\CatLock\dist\CatLock.exe"; DestDir: "{userpf}\.catlock"; Flags: ignoreversion
 
 [Icons]
 Name: "{autoprograms}\CatLock"; Filename: "{userpf}\.catlock\catlock.exe"
@@ -24,6 +24,7 @@ Root: HKCU; Subkey: "SOFTWARE\Microsoft\Windows\CurrentVersion\Run"; ValueType: 
 
 [Run]
 Filename: "{cmd}"; Parameters: "/C copy ""{userpf}\.catlock\catlock.exe"" ""{userstartup}\catlock.lnk"""; Flags: shellexec runhidden; Tasks: startup
+Filename: https://catlock.app/about/; Description: "Visit website"; Flags: postinstall shellexec
 
 [Code]
 function InitializeSetup(): Boolean;
