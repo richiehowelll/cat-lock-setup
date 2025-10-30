@@ -1,12 +1,13 @@
 [Setup]
 AppName=CatLock
-AppVersion=1.0.0
+AppVersion=1.2.0
 DefaultDirName={userpf}\.catlock
 DisableProgramGroupPage=yes
 OutputDir=.
 OutputBaseFilename=CatLockSetup
 DefaultGroupName=CatLock
 PrivilegesRequired=lowest
+CloseApplications=force
 
 [Files]
 Source: "C:\Users\richi\PycharmProjects\CatLock\dist\CatLock.exe"; DestDir: "{userpf}\.catlock"; Flags: ignoreversion
